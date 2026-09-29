@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Azure Task Board</title>
+</head>
+
+<body>
+    <h1>Azure Task Board</h1>
+
+    {% for task in tasks %}
+        <div>
+            <h2>{{ task.title }}</h2>
+            <p>Status: {{ task.status }}</p>
+        </div>
+    {% endfor %}
+
+</body>
+</html>
